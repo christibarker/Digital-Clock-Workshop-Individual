@@ -1,0 +1,23 @@
+body {
+	background: lightgray;
+}
+
+#digital_clock {
+	border-radius: 15px;
+	text-align: center;
+	display:block;
+	margin:auto;
+	font-size: 4.5em;
+	top:40%;
+	left:50%;
+	position: absolute;
+	border-style: dotted;
+}
+
+#text {
+	text-align: center;
+	margin-top: 20%;
+	font-size: 60px;
+	color: navy;
+
+}
