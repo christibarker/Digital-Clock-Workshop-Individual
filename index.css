@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(36, 16, 40);
+}
+
+
+#clock {
+	text-align: center;
+	font-size: 4.5em;
+	display: block;
+	font-weight: 100px;
+	min-width: 200px;
+	color: yellow;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
