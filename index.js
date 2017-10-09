@@ -7,8 +7,14 @@ function displayTime() {
 	var h = d.getHours();
 	var m = d.getMinutes();
 	var s = d.getSeconds();
-	
 
+function displayTime() {
+	
+	var d= new Date();
+	var h= d.getHours();
+	var m= d.getMinutes();
+	var s= d.getSeconds();
+	var color = '#' + h + m + s;
 
 	if(s < 10) s = '0' + s;
 	if(m < 10) m = '0' + m;
@@ -26,17 +32,9 @@ document.getElementById('digital_clock').innerHTML = time;
 	else if (h < 24) {
 		document.getElementById('text').innerText = 'Afternoon';
 	}
-
+	
+	document.body.style.background = color;
+	document.getElementById('clock').innerText = color;	
 }
 
 setInterval (displayTime, 1000);
-
-
-
-// change pictures for digital_clock
-// create array for images
-
-// for (var i=0; i<imageclock.digits.length; i++){ //preload images
-// 		preloadimages[i]=new Image()
-// 		preloadimages[i].src=imageclock.digits[i]
-// 	}
